@@ -17,7 +17,7 @@ class Store:
 
 class StoreDataLoader:
 	
-	def load_data(self, search_string, limit, offset):
+	def load_data(self, search_string = '', limit = 10, offset = 0):
 		filename = os.path.join(current_app.static_folder, current_app.config['STORES_FILE'])
 		data = self.read_file(filename)
 		if (search_string and search_string.strip()):
