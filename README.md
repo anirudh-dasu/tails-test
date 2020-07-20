@@ -11,6 +11,7 @@ We have two folders in this repo, server and client.
     - `query` - A search string to filter the stores either by postcode or name.
     - `limit` - A limit for the number of results desired. Defaults to 10.
     - `offset` - To be used in conjunction with limit to get further results. Defaults to 0.
+    - `with_coordinates` - If 'true', the coordinates of each location will be store from postcodes.io
 - In order to run the tests, use the following command - `python -m unittest tests/test_stores.py`
 - Logging is to STDOUT
 
